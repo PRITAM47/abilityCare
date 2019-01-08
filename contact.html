@@ -22,11 +22,33 @@
 
     <!-- -------------CSS-------------------  -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style type="text/css">
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .navbar {
+          z-index: 200;
+        }
+        .contact-second-section {
+          margin: 3rem;
+          display: block;
+        }
+        .contact-box {
+          width: 100%;
+          margin: 25px;
+        }
+
+        .message-box {
+          width: 100%;
+          padding: 0px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- ----------------HEADER SECTION-----------------  -->
     <div class="main-header">
-      <nav class="navbar navbar-expand-md ">
+      <nav class="navbar navbar-expand-md test">
         <header class="container header">
           <a class="my-brand" href="index.html">ABILITY CARE</a>
           <button
@@ -172,5 +194,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="test.js"></script>
   </body>
 </html>

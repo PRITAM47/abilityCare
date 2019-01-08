@@ -22,11 +22,44 @@
 
     <!-- -------------CSS-------------------  -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style type="text/css">
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .navbar {
+          z-index: 200;
+        }
+        .about-second-section {
+          margin: 3rem 3rem;
+          display: block;
+          margin-bottom: 45rem;
+        }
+
+        .about-second-section .about-content {
+          margin-top: 320px;
+          margin-left: 60px;
+          height: 90px;
+          width: 70%;
+          text-align: center;
+        }
+
+        .about-second-section .about-image {
+          position: absolute;
+          top: 25%;
+          left: 10%;
+          margin-top: -20px;
+          padding-top: 2rem;
+          padding-left: 1rem;
+          height: 90px;
+          width: 30%;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- ----------------HEADER SECTION-----------------  -->
     <div class="main-header">
-      <nav class="navbar navbar-expand-md ">
+      <nav class="navbar navbar-expand-md test">
         <header class="container header">
           <a class="my-brand" href="index.html">ABILITY CARE</a>
           <button
@@ -151,5 +184,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="test.js"></script>
   </body>
 </html>

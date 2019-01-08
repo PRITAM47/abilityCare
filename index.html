@@ -19,11 +19,46 @@
 
     <!-- -------------CSS-------------------  -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style type="text/css">
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .navbar {
+          z-index: 200;
+        }
+        .second-section-content img {
+          height: 150px;
+          padding-bottom: 20px;
+        }
+
+        .mid-section{
+          height: 220px;
+        }
+
+        .mid-section p {
+          font-size: 1.4rem;
+        }
+
+        .mid-section div {
+          font-size: 1.4rem;
+          margin-top: 20px;
+          padding: 30px;
+        }
+        .mid-section div button {
+          display: block;
+          margin: 2px 170px;
+          background: #24a0de;
+          font-weight: bold;
+          
+        }
+
+      }
+    </style>
   </head>
   <body>
     <!-- ----------------HEADER SECTION-----------------  -->
     <div class="main-header">
-      <nav class="navbar navbar-expand-md ">
+      <nav class="navbar navbar-expand-lg test">
         <header class="container header">
           <a class="my-brand" href="index.html">ABILITY CARE</a>
           <button
@@ -137,7 +172,7 @@
           </section> -->
 
     <section class="second-section row">
-      <div class="second-section-content col-lg-3">
+      <div class="second-section-content col-sm-6 col-lg-3">
         <img src="images/pic1.png" alt="pic1" />
         <div class="content">
           <h5>Therapeutic Supports</h5>
@@ -147,7 +182,7 @@
           </p>
         </div>
       </div>
-      <div class="second-section-content col-sm-3">
+      <div class="second-section-content col-sm-6 col-lg-3">
         <img src="images/pic2.png" alt="pic2" />
         <div class="content">
           <h5>Plan Management</h5>
@@ -157,7 +192,7 @@
           </p>
         </div>
       </div>
-      <div class="second-section-content col-sm-3">
+      <div class="second-section-content col-sm-6 col-lg-3">
         <img src="images/pic3.png" alt="pic3" />
         <div class="content">
           <h5>Community Nursing Care</h5>
@@ -167,7 +202,7 @@
           </p>
         </div>
       </div>
-      <div class="second-section-content col-sm-3">
+      <div class="second-section-content col-sm-6 col-lg-3">
         <img src="images/pic4.png" alt="pic4" />
         <div class="content">
           <h5>Acommodation Tenancy</h5>
@@ -191,7 +226,7 @@
         <div class="underline"></div>
 
         <div class="container row wrapper">
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-train fa-2x"></i>
                 
@@ -202,7 +237,7 @@
                 
             </div>
 
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-users fa-2x"></i>
                 
@@ -212,7 +247,7 @@
                 </div>
                 
             </div>
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-user fa-2x"></i>
                 
@@ -222,7 +257,7 @@
                 </div>
                 
             </div>
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-users fa-2x"></i>
                 
@@ -232,7 +267,7 @@
                 </div>
                 
             </div>
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-wheelchair fa-2x"></i>
                 
@@ -242,7 +277,7 @@
                 </div>
                 
             </div>
-            <div class="third-section-content col-sm-4">
+            <div class="third-section-content col-sm-6 col-lg-4">
             
                 <i class="fa fa-handshake fa-2x"></i>
                 
@@ -393,5 +428,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="test.js"></script>
   </body>
 </html>
