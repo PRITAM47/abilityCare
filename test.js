@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
-    if (ww >= 600) {
+    if (ww >= 768) {
       $(".test").removeClass("navbar-light");
-    } else if (ww < 600) {
+    } else if (ww < 768) {
       $(".test").addClass("navbar-light");
     }
   };
