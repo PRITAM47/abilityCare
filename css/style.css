@@ -1,24 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 @import url("https://fonts.googleapis.com/css?family=Patua+One");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
+/* ------------------------------------------------ */
+
+.scrollbar-lady-lips::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.scrollbar-lady-lips::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.scrollbar-lady-lips::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff9a9e),
+    color-stop(99%, #fecfef),
+    to(#fecfef)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+}
+/* ----------------------------------------------- */
 hr {
   background-color: #e35e33;
   height: 1px;
   border: 0;
 }
-
 .main-header {
   margin: 0;
   height: 100px;
   padding: 10px auto;
 }
-
 .my-brand {
   font-family: "Patua One", cursive;
   color: #24a0de;
@@ -26,164 +64,154 @@ hr {
   font-weight: bold;
   font-size: 2rem;
 }
-
 .navbar {
   padding: 10px auto;
   text-align: center;
   width: 100%;
   height: 80%;
 }
-
 .nav-item {
   color: #8f8f76;
   padding: 10px;
   font-weight: bold;
 }
-
 .my-link {
   color: #e35e33;
 }
-
 .my-active {
   color: #24a0de;
 }
-
 .nav-item a:hover {
   color: #24a0de;
 }
-
 .my-brand:hover {
-  color: #8f8f76;
+  color: #509e52;
   text-decoration: none;
 }
-
 .header {
   width: 100%;
   height: 20%;
 }
-
 .header .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
 }
-
 .dropdown-item {
   padding: 10px;
 }
-
 .my-item a:hover {
   background-color: #0891d675;
   font-weight: bold;
   color: #e35e33;
 }
-
 .first-section {
   width: 100%;
   height: 80vh;
 }
-
 .carousel-inner > .carousel-item > img {
   width: 100%;
   /* height: 80vh; */
   margin-bottom: 50px;
+  height: 100vh;
 }
-
 .carousel-caption {
-  padding-bottom: 450px;
+  padding-bottom: 250px;
   color: black;
+  font-family: "Ubuntu", sans-serif;
 }
-
 .carousel-caption h5 {
   font-size: 2rem;
+  font-weight: 600;
+  color: #509e52;
 }
-
-.carousel-caption p {
-  font-size: 18px;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 1000rem;
+  width: 1000rem;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border: 2px solid black;
 }
-
 .first-section .background-image {
   background: url(../images/bg.jpeg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 60vh;
 }
-
 .first-section .background-image .content {
   text-align: center;
   height: 200px;
   padding: 10%;
 }
-
 .first-section .background-image p {
   font-family: "Righteous", cursive;
   color: #24a0de;
   font-size: 40px;
 }
-
 .first-section .background-image .small {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
 }
-
 .second-section {
   margin: 0 20px;
 }
-
-.second-section p {
-  color: black;
+.second-section h5 {
+  color: #ffc800;
 }
-
+.second-section p {
+  color: #e35e33;
+}
 .second-section-content {
   width: 100px;
   text-align: center;
 }
-
 .second-section-content img {
-  height: 200px;
-  padding-bottom: 20px;
+  border-radius: 30px;
+  height: 300px;
+  padding: 20px;
+  margin-bottom: 1.2rem;
 }
-
+.second-section-content a {
+  text-decoration: none;
+}
+.second-section-content .btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
 .mid-section {
-  background-image: linear-gradient(
-      to right,
-      rgba(31, 153, 214, 0.6),
-      rgba(31, 153, 214, 0.6)
-    ),
+  background-image: linear-gradient(to right, rgb(37, 53, 89), rgb(37, 53, 89)),
     url(../images/medical-appointment-doctor-healthcare-40568.jpeg);
   background-size: cover;
   background-position: center, center;
-  background-repeat: no-repeat;
-  /* background: #1f99d6
+  background-repeat: no-repeat; /* background: #1f99d6
     url(../images/medical-appointment-doctor-healthcare-40568.jpeg) no-repeat
     center center;
   margin: 90px 0; */
-  /* z-index: -1; */
-  /* background-color: ; */
-
+  /* z-index: -1; */ /* background-color: ; */
   margin: 60px 0px;
   height: 280px;
   text-align: center;
 }
-
 .mid-section p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   padding: 80px 20px;
   color: #fff;
 }
-
+.card {
+  margin-bottom: 1.5rem;
+}
 .introduction {
   margin-top: 0;
   margin-bottom: 3rem;
   padding: 2rem;
   background-image: url("../edited/collage.jpg");
 }
-
 .introduction h2 {
   text-align: center;
   color: #fff;
 }
-
 .introduction h5 {
   color: #00ffff;
   font-size: 3rem;
@@ -192,57 +220,46 @@ hr {
   color: #ffc800;
   font-size: 1.5rem;
 }
-
 .introduction .underline {
   margin: 15px auto;
   width: 70px;
   height: 80px;
   border-top: 2px solid #24a0de;
 }
-
 .introduction-content {
   width: 100%;
   text-align: center;
 }
-
 .third-section h2 {
   text-align: center;
 }
-
 .third-section .underline {
   margin: 15px auto;
   width: 70px;
   height: 80px;
   border-top: 2px solid #24a0de;
 }
-
 .third-section-content {
   display: inline-block;
 }
-
 .third-section .wrapper {
   margin: 0px auto;
   margin-bottom: 30px;
 }
-
 .third-section-content div {
   margin-right: 30px;
   margin-top: 0px;
 }
-
 .third-section-content i {
   margin-top: 20px;
 }
-
 .third-section-content h5,
 .third-section-content p {
   text-align: center;
 }
-
 .third-section-content p {
   color: black;
 }
-
 .mid-section div {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -250,12 +267,10 @@ hr {
   padding: 100px 0px;
   color: black;
 }
-
 .mid-section div span {
   margin-left: 0px;
   font-size: 2.5rem;
 }
-
 .mid-section div button {
   color: black;
   font-size: 20px;
@@ -263,26 +278,21 @@ hr {
   border-radius: 100px;
   margin-left: 60px;
 }
-
 .mid-section div a {
   color: black;
 }
-
 .mid-section div a:hover {
   color: #fff;
 }
-
 .fourth-section h2 {
   text-align: center;
 }
-
 .fourth-section .underline {
   margin: 15px auto;
   width: 70px;
   height: 80px;
   border-top: 2px solid #24a0de;
 }
-
 /* .carousel-inner > .carousel-item > img {
   text-align: center;
   border-radius: 60%;
@@ -290,96 +300,104 @@ hr {
   height: 30vh;
   margin-bottom: 20px;
 } */
-
 .fifth-section h2 {
   text-align: center;
 }
-
 .fifth-section .underline {
   margin: 15px auto;
   width: 70px;
   height: 80px;
   border-top: 2px solid #24a0de;
 }
-
 .fifth-section form {
   border: 2px solid #24a0de;
   margin-bottom: 2rem;
   padding: 2rem;
 }
+.fifth-section input:hover {
+  background-color: #253559;
+}
 .sixth-section {
   margin-top: 20px;
 }
-
+/* -----------------TESTIMONIALS----------------------- */
+.index-about-third-section .card-deck {
+  margin-left: 2em;
+  padding: 0 2em;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+}
+.index-about-third-section .card img {
+  width: 50%;
+  height: 50%;
+  padding: 2em 2em;
+  border-radius: 30px;
+}
+.index-about-third-section .card-body {
+  padding: 3rem;
+  padding-top: 5rem;
+  color: #fff;
+}
+.card-text i {
+  margin-right: 0.7em;
+}
+/* ------------------TESTIMONIALS---------------------- */
 .card-title {
   text-align: center;
   font-weight: bold;
   margin-bottom: 30px;
 }
-
 .card-text i {
   margin-right: 10px;
 }
-
 .card-footer {
   text-align: center;
 }
-
 .about-first-section {
   background-color: #24a0de;
   color: #fff;
   height: 7rem;
 }
-
 .about-first-section h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   padding-top: 2rem;
 }
-
 .about-second-section {
   margin: 3rem 3rem;
   display: flex;
   margin-bottom: 20rem;
 }
-
 .about-second-section .about-content {
   height: 90px;
   width: 70%;
 }
-
 .about-second-section .about-image {
   padding-top: 2rem;
   padding-left: 1rem;
   height: 90px;
   width: 30%;
 }
-
 .contact-first-section {
   background-color: #24a0de;
   color: #fff;
   height: 7rem;
 }
-
 .contact-first-section h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   padding-top: 2rem;
 }
-
 .contact-second-section {
   margin: 3rem;
   display: flex;
 }
-
 .contact-box {
   width: 50%;
 }
-
 .contact-box div {
   margin-bottom: 4rem;
 }
-
 .contact-box div span {
   padding-left: 2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -387,12 +405,10 @@ hr {
   font-size: 1rem;
   color: black;
 }
-
 .message-box {
   width: 60%;
   padding-left: 5rem;
 }
-
 .message-box h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
